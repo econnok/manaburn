@@ -32,3 +32,18 @@ body {
     font-family: sans-serif;
     position: relative;
 }
+.links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 12px;
+}
+.links a{
+    color:#fff;
+    text-decoration:none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
