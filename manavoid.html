@@ -13,13 +13,15 @@
     src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="gifplayer/dist/gifplayer.css">
+    <script type="text/javascript" src="gifplayer/dist/jquery.gifplayer.js"></script>
 </head>
 <body>
     <div class="center-container">
         
         <div class="content">
-            <img src="img/beshbesh.png" id="center-image" onclick="manabreak()">
-            <audio id="manabreako" src="sound/Greater_Bash.mp3" preload="auto" hidden="true"></audio>
+            <img src="img/Mana_Void_icon.png" id="center-image" class="manavoid" onclick="manabreak()">
+            <audio id="manabreako" src="sound/Mana_Void.mp3" preload="auto" hidden="true"></audio>
         </div>
                 <footer class="links">
             
@@ -33,15 +35,16 @@
             
             //var test = new Audio();
             function manabreak(){
-                //document.getElementById('manabreako').currentTime = 0;
-                    var audio = document.createElement("audio");
-                    audio.src = "sound/Greater_Bash.mp3";
-                    audio.addEventListener("ended", function () {
-                     document.removeChild(this);
-                    }, false);
-                    audio.volume = 0.4;
-                    audio.play();   
-                      $( "#center-image" ).delay(170).effect( "shake", {times:6}, 1500 );
+                document.getElementById('manabreako').currentTime = 0;
+                  //  var audio = document.createElement("audio");
+                   // audio.src = "sound/Mana_Void.mp3";
+                //    audio.addEventListener("ended", function () {
+                 //    document.removeChild(this);
+                 //   }, false);
+                 //   
+                 document.getElementById('manabreako').volume = 0.6;
+                    document.getElementById('manabreako').play();   
+                     // $( "#center-image" ).delay(170).effect( "shake", {times:6}, 1500 );
 
 
             }
