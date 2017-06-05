@@ -10,16 +10,22 @@
         
         <div class="content">
             <img src="img/ranged.png" id="center-image" onclick="manabreak()">
-            <audio id="manabreako" src="sound/mana-break.wav" autostart="false" hidden="true"></audio>
+            <audio id="manabreako" src="sound/mana-break.wav" preload="auto" hidden="true"></audio>
         </div>
         
    
         <script type="text/javascript">
             
-            
+            //var test = new Audio();
             function manabreak(){
-                document.getElementById('manabreako').currentTime = 0;
-                document.getElementById('manabreako').play();
+                //document.getElementById('manabreako').currentTime = 0;
+                    var audio = document.createElement("audio");
+                    audio.src = "sound/mana-break.wav";
+                    audio.addEventListener("ended", function () {
+                     document.removeChild(this);
+                    }, false);
+                    audio.play();   
+
             }
 
       
