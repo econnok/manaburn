@@ -38,6 +38,7 @@
                     audio.addEventListener("ended", function () {
                      document.removeChild(this);
                     }, false);
+                    audio.volume = 0.4;
                     audio.play();   
                       $( "#center-image" ).effect( "shake", {times:6}, 1500 );
 
