@@ -5,6 +5,14 @@
     <meta http-equiv="expires" content="0">
     <title>17%</title>
     <link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="center-container">
@@ -26,6 +34,8 @@
                      document.removeChild(this);
                     }, false);
                     audio.play();   
+                      $( "#center-image" ).effect( "shake" );
+
 
             }
 
